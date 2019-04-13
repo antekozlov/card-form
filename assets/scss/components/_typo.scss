@@ -1,0 +1,17 @@
+body,
+html {
+  font-family: $main-font;
+  font-size: 18px;
+  color: $main-color;
+  line-height: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:focus,
+input:focus {
+	outline: 2px dotted gray;
+  outline-offset: 1px;
+}

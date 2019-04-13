@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card Form</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="copyright" content="" />
+  <meta name="title" property="og:title" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta name="description" property="og:description" content="" />
+  <link rel="stylesheet" href="assets/css/core.min.css">
+</head>
+
+<body>
+  <section class="pay-form">
+    <div class="container">
+      <h1>Оплата</h1>
+      <h3>Введите данные вашей карты</h3>
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+          <form class="creditly-card-form" id="pay-form" name="pay-form" method="POST">
+
+            <div class="credit-card-wrapper">
+              <div class="row form-group">
+                <div class="col-sm-8 controls col-7">
+                  <label for="credit-card-number" class="control-label">Номер карты</label>
+                  <input class="number credit-card-number form-control" type="text" name="number"
+                    pattern="(\d*\s){3}\d*" inputmode="numeric" autocomplete="cc-number" autocompletetype="cc-number"
+                    x-autocompletetype="cc-number"
+                    placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;"
+                    id="credit-card-number">
+                </div>
+                <div class="col-sm-4 col-5 controls">
+                  <label for="expiration-month-and-year" class="control-label">Срок действия</label>
+                  <input class="expiration-month-and-year form-control" id="expiration-month-and-year" type="text"
+                    name="expiration-month-and-year" placeholder="MM / YY">
+                </div>
+
+              </div>
+              <div class="row form-group mb-0">
+                <div class="col-sm-8 col-9 controls">
+                  <label for="billing-address-name" class="control-label">Владелец карты</label>
+                  <input class="billing-address-name form-control" id="billing-address-name" type="text" name="name"
+                    placeholder="Ivan Ivanov">
+                </div>
+                <div class="col-sm-4 col-3 controls">
+                  <label for="security-code" class="control-label">CVV</label>
+                  <input class="security-code form-control" · inputmode="numeric" pattern="\d*" type="password"
+                    name="security-code" placeholder="&#149;&#149;&#149;" id="security-code">
+                </div>
+              </div>
+              <div class="card-type"></div>
+            </div>
+            <div class="text-center">
+              <!-- <button class="pay-button">Оплатить</button> -->
+              <input type="submit" value="Оплатить" class="pay-button">
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="assets/js/creditly.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
